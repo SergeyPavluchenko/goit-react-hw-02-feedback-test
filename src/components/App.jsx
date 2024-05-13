@@ -1,16 +1,12 @@
+import { Feedback } from './Feedback/Feedback';
+import { GlobalStyled } from './GlobalStyled';
+import { Layout } from './Layout/Layout';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010102',
-      }}
-    >
-      React homework template
-    </div>
+    <Layout>
+      <Feedback initualValue={0} />
+      <GlobalStyled />
+    </Layout>
   );
 };
